@@ -1,0 +1,253 @@
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+h1 {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  float: left;
+  font-size: 37px;
+  line-height: 44px;
+  font-weight: 700;
+}
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  margin-bottom: 5px;
+  float: right;
+}
+div#messages {
+  margin-top: 100px;
+  overflow-y: scroll;
+}
+.button {
+  display: block;
+  width: auto;
+  margin-top: 48px;
+  margin-right: 0%;
+  margin-left: 33%;
+  padding: 4px 15px 4px 8px;
+  float: left;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: #1db95c;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.home-section-logo {
+  margin-left: 0px;
+  padding-left: 0px;
+  font-family: Bitter, serif;
+  color: #1db95c;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+}
+.front-menu-top {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  overflow-x: visible;
+  overflow-y: visible;
+  width: 100%;
+  background-color: white;
+}
+.front-home-section {
+  height: 400px;
+  margin-top: 74px;
+  background-color: #00a2e4;
+}
+.front-chat-section {
+  height: 400px;
+  margin-top: 75px;
+  background-color: white;
+}
+.front-learning-section {
+  height: 400px;
+  margin-top: 26px;
+  background-color: #c21028;
+}
+.front-about-section {
+  height: auto;
+  padding-bottom: 30px;
+  background-color: #00a2e4;
+  color: #333;
+}
+.front-menu-section {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-bottom: 0px;
+  background-color: transparent;
+}
+.chat-image {
+  margin-left: 100px;
+  border-radius: 18px;
+}
+.front-bottom-section {
+  height: 350px;
+}
+.logo-header {
+  font-size: 47px;
+}
+.chat-top-image {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.leave-chat-button {
+  margin-top: 6px;
+}
+.chat-area {
+  height: 500px;
+  margin-top: 10px;
+  background-color: #efffec;
+}
+.chat-text-input {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+.send-button {
+  float: right;
+}
+.image-know {
+  margin-left: 35px;
+}
+.big-knowledge {
+  font-family:'Changa One', Impact, sans-serif;
+  color: gray;
+  font-size: 54px;
+}
+.big-share {
+  margin-left: 163px;
+  color: #d0d0d0;
+  font-size: 38px;
+}
+.big-learn {
+  float: right;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  color: #303030;
+  font-size: 78px;
+}
+.big-cuebo {
+  float: right;
+  font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, sans-serif;
+  color: #e0e0e0;
+  font-size: 68px;
+}
+.big-teach {
+  margin-left: 42px;
+  color: #484848;
+  font-size: 48px;
+}
+.cuebo-image {
+  border: 10px solid #1db95c;
+  border-radius: 25px;
+  box-shadow: none;
+}
+.row-what {
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  border-style: dashed dashed dashed dotted;
+  border-width: 2px 0px 0px;
+  border-color: #f0f0f0 black black;
+}
+.column-top-margin {
+  margin-top: 50px;
+}
+@media (max-width: 991px) {
+}
+/*
+This is the css for the modal popup name box
+*/
+.modal{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: -moz-calc(100% - 102px);
+  height: -webkit-calc(100% - 102px);
+  height: calc(100% - 102px);
+  left: 0;
+  position: absolute;
+  top: 62px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.backdrop{
+  width: 100%;
+  height:100%;
+  background-color: #1DB95C;
+  opacity: 0.4;
+}
+
+.popup {
+  position: absolute;
+  height: 100px;
+  width: 300px;
+  left: -moz-calc(50% - 150px);
+  left: -webkit-calc(50% - 150px);
+  left: calc(50% - 150px);
+  top: -moz-calc(50% - 50px);
+  top: -webkit-calc(50% - 50px);
+  top: calc(50% - 50px);
+  background: #FFFFFF;
+  border-style: solid;
+  border-color: #1DB95C;
+}
+
+.pophead {
+  background-color: #1DB95C;
+  color: #1DB95C;
+  font-weight: bold;
+  padding: 8px 3px;
+  vertical-align: middle;
+}
+
+.popbody {
+  padding: 10px 5px;
+}

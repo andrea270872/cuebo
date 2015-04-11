@@ -16,7 +16,7 @@ var app = express();
 /* fixed for Express 4.x according to 
    https://github.com/strongloop/express/wiki/Migrating-from-3.x-to-4.x
  */
-app.set('port', 3000);
+app.set('port', 8080);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(favicon(__dirname + '/public/favicon.ico'));
@@ -31,7 +31,12 @@ app.get('/chat', function(req, res){
   res.render('chat.jade', { title: 'Cuebo Chat' });
 });
 
-var server = http.createServer(app).listen(app.get('port'), function(){
+// New code for opshift deployment
+var port =  process.env.OPENSHIFT_NODEJS_PORT || 8080;   // Port 8080 if you run locally
+var address =  process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1"; // Listening to localhost if you run locally
+app.listen(port, address);
+
+var server = http.createServer(app).listen(app.get('port'), app.get('address'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
 

@@ -16,7 +16,6 @@ var app = express();
 /* fixed for Express 4.x according to 
    https://github.com/strongloop/express/wiki/Migrating-from-3.x-to-4.x
  */
-app.set('port', 8080);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(favicon(__dirname + '/public/favicon.ico'));

@@ -1,3 +1,5 @@
+var io = io.connect('http://http://cuebo-cuebo.rhcloud.com/chat:8000/', {'forceNew':true });
+
 var chatInfra = io.connect('/chat_infra'),
     chatCom = io.connect('/chat_com');
 
